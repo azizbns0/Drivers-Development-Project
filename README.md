@@ -18,5 +18,3 @@ This project involves developing custom drivers from scratch for the **STM32F407
    ```bash
    git clone https://github.com/azizbns0/Drivers-Development-Project.git
    cd Drivers-Development-Project
-
-This README.md is concise, professional, and provides all the essential information. Let me know if you'd like any changes!
