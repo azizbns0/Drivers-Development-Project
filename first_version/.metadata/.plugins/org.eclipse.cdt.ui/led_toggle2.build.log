@@ -1,0 +1,51 @@
+14:11:44 **** Build of configuration Debug for project led_toggle2 ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+../Src/main.c:1:9: error: macro names must be identifiers
+    1 | #define <stdint.h>
+      |         ^
+../Src/main.c:22:11: error: unknown type name 'uint32_t'
+   22 |  volatile uint32_t DUMMY[12];
+      |           ^~~~~~~~
+../Src/main.c:23:11: error: unknown type name 'uint32_t'
+   23 |  volatile uint32_t AHB1ENR;
+      |           ^~~~~~~~
+../Src/main.c:28:11: error: unknown type name 'uint32_t'
+   28 |  volatile uint32_t MODDER;
+      |           ^~~~~~~~
+../Src/main.c:29:11: error: unknown type name 'uint32_t'
+   29 |  volatile uint32_t DUMMY[4];
+      |           ^~~~~~~~
+../Src/main.c:30:11: error: unknown type name 'uint32_t'
+   30 |  volatile uint32_t ODR;
+      |           ^~~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:33:15: error: 'RCC_TypeDef' undeclared (first use in this function); did you mean 'RCC_typeDef'?
+   33 | #define RCC ((RCC_TypeDef*)RCC_BASE)
+      |               ^~~~~~~~~~~
+../Src/main.c:41:6: note: in expansion of macro 'RCC'
+   41 |      RCC->AHB1ENR |= GPIODEN;
+      |      ^~~
+../Src/main.c:33:15: note: each undeclared identifier is reported only once for each function it appears in
+   33 | #define RCC ((RCC_TypeDef*)RCC_BASE)
+      |               ^~~~~~~~~~~
+../Src/main.c:41:6: note: in expansion of macro 'RCC'
+   41 |      RCC->AHB1ENR |= GPIODEN;
+      |      ^~~
+../Src/main.c:33:27: error: expected expression before ')' token
+   33 | #define RCC ((RCC_TypeDef*)RCC_BASE)
+      |                           ^
+../Src/main.c:41:6: note: in expansion of macro 'RCC'
+   41 |      RCC->AHB1ENR |= GPIODEN;
+      |      ^~~
+../Src/main.c:46:6: error: 'GPIOD_MODE_R' undeclared (first use in this function)
+   46 |      GPIOD_MODE_R  &=~(1U<<25);
+      |      ^~~~~~~~~~~~
+../Src/main.c:54:5: error: 'GPIOD_OD_R' undeclared (first use in this function)
+   54 |     GPIOD_OD_R ^=LED_PIN;
+      |     ^~~~~~~~~~
+make: *** [Src/subdir.mk:25: Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+
+14:11:45 Build Failed. 11 errors, 0 warnings. (took 1s.216ms)
+

@@ -1,0 +1,13 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:led_toggle Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:10_systick_delay,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_gpio_output Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:4_gpio_INPUT,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:8_adc,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:14_inputinterupt
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:10_systick_delay/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:10_systick_delay/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:14_inputinterupt/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_gpio_output\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:2_gpio_output\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:8_adc/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:led_toggle\ Debug/activeLaunchMode=run
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:led_toggle\ Debug/activeLaunchTarget=null\:---

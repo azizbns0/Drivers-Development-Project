@@ -1,0 +1,2 @@
+../Src/TIM.c:9:6:TIM2_1hz_init	4	static
+../Src/TIM.c:24:6:TIM2_output_compare	4	static

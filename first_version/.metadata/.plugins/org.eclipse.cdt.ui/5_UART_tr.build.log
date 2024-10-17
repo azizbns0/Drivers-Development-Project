@@ -1,0 +1,17 @@
+13:38:53 **** Incremental Build of configuration Debug for project 5_UART_tr ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -DSTM32F407xx -c -I../Inc -I"C:/Users/azizb/Desktop/stm32 formation/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/azizb/Desktop/stm32 formation/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "5_UART_tr.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\azizb\Desktop\stm32 formation\5_UART_tr\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="5_UART_tr.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 5_UART_tr.elf
+ 
+arm-none-eabi-size   5_UART_tr.elf 
+arm-none-eabi-objdump -h -S  5_UART_tr.elf  > "5_UART_tr.list"
+   text	   data	    bss	    dec	    hex	filename
+    960	      8	   1568	   2536	    9e8	5_UART_tr.elf
+Finished building: default.size.stdout
+ 
+Finished building: 5_UART_tr.list
+ 
+
+13:38:53 Build Finished. 0 errors, 0 warnings. (took 410ms)
+

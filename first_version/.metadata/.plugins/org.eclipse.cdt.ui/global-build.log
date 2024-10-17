@@ -1,0 +1,21 @@
+17:55:23 **** Incremental Build of configuration Debug for project 14_inputinterupt ****
+make -j12 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -DSTM32F407xx -c -I../Inc -I"C:/Users/azizb/Desktop/stm32 formation/CMSIS/Device/ST/STM32F4xx/Include" -I"C:/Users/azizb/Desktop/stm32 formation/CMSIS/Include" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "14_inputinterupt.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\azizb\Desktop\stm32 formation\14_inputinterupt\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="14_inputinterupt.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 14_inputinterupt.elf
+ 
+arm-none-eabi-size   14_inputinterupt.elf 
+arm-none-eabi-objdump -h -S  14_inputinterupt.elf  > "14_inputinterupt.list"
+   text	   data	    bss	    dec	    hex	filename
+   5560	    108	   1588	   7256	   1c58	14_inputinterupt.elf
+Finished building: default.size.stdout
+ 
+Finished building: 14_inputinterupt.list
+ 
+22:49:28 **** Incremental Build of configuration Debug for project 14_inputinterupt ****
+make -j12 all 
+arm-none-eabi-size   14_inputinterupt.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5560	    108	   1588	   7256	   1c58	14_inputinterupt.elf
+Finished building: default.size.stdout
+ 
